@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Denny Muchtar"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/letter_small" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selasa, 4 Juli 2015"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/letter_small" />
+
+                <ImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:background="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:maxLines="2"
+                    android:text="Pelantikan Ketua Baru BKMT"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/letter_medium" />
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:text="Sample sample sample sample"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/letter_small" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="7dp">
+
+                <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/llLike"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:paddingRight="35dp">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/btnLike"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="17dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="17dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:src="@drawable/ic_like_grey" />&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/tvLikeCount"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="12"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="@dimen/letter_small" />&ndash;&gt;-->
+                <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llComment"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingRight="35dp">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/btnComment"-->
+                        <!--android:layout_width="17dp"-->
+                        <!--android:layout_height="17dp"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_comment_grey" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvCommentCount"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="12"-->
+                        <!--android:textSize="@dimen/letter_small" />-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAccent" />
+</LinearLayout>
